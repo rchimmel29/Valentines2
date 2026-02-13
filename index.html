@@ -1,16 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="https://raw.githubusercontent.com/sojijr/valentine-website/main/public/images/favicon.png">
-    <link rel="icon" href="public/images/favicon.png" type="image/x-icon" />  
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/sojijr/valentine-website/main/public/images/favicon.png" />
+    <link rel="icon" href="public/images/favicon.png" type="image/x-icon" />
     <title>Happy Valentine's Day</title>
-    <link rel="stylesheet" href="public/style.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="public/style.css" />
+    <style>
+        /* Đảm bảo button ẩn lúc đầu và có style cơ bản */
+        #valentinesButton {
+            display: none;
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(255, 77, 77, 0.4);
+        }
+    </style>
+</head>
+<body>
     <canvas id="starfield"></canvas>
-    <button id="valentinesButton">Click Me! ❤</button>
+    <button id="valentinesButton">Nhấn vào tôi! ❤</button>
+
+    <audio id="backgroundMusic" loop>
+        <source src="./Dù Cho Tận Thế.mp3" type="audio/mpeg" />
+    </audio>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
