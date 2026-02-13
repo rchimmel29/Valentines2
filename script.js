@@ -15,8 +15,8 @@ let secondOpacity = 0;
 let thirdOpacity = 0;
 
 // Cấu hình tốc độ (Có thể chỉnh tại đây)
-const fadeSpeed = 0.02; // Tốc độ hiện chữ (tăng từ 0.01 lên 0.02)
-const step = 150;       // Khoảng thời gian mỗi giai đoạn (rút ngắn để chuyển câu nhanh hơn)
+const fadeSpeed = 0.03; // Tốc độ hiện chữ (tăng từ 0.01 lên 0.02)
+const step = 140;       // Khoảng thời gian mỗi giai đoạn (rút ngắn để chuyển câu nhanh hơn)
 
 function getRandom(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
